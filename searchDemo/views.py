@@ -7,7 +7,7 @@ from haystack.query import SearchQuerySet
 from .models import Product
 from .forms import FacetedProductSearchForm
 
-from searchDemo.models import Product ########bakery
+#from searchDemo.models import Product ########bakery
 
 
 class HomeView(TemplateView):
