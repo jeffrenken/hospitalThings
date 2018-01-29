@@ -9,7 +9,7 @@ from .models import Product
 class ProductIndex(indexes.SearchIndex, indexes.Indexable):
     text = indexes.EdgeNgramField(
         document=True, use_template=True,
-        template_name='/Users/Jeff/Downloads/django-haystack-elasticsearch-original/templates/search/indexes/product_text.txt')
+        template_name='/Users/jrenken/GitHub/hospitalThings/templates/search/indexes/product_text.txt')
     title = indexes.EdgeNgramField(model_attr='title')
     description = indexes.EdgeNgramField(model_attr="description", null=True)
 

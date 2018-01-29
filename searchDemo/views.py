@@ -8,7 +8,6 @@ from .models import Product
 from .forms import FacetedProductSearchForm
 
 from searchDemo.models import Product ########bakery
-from bakery.views import BuildableDetailView, BuildableListView ########bakery
 
 
 class HomeView(TemplateView):
