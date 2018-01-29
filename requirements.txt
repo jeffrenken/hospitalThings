@@ -9,13 +9,10 @@ psycopg2==2.7.3.2
 py2app==0.7.3
 PyInstaller==3.2.1
 
-pyOpenSSL==0.13.1
-pyparsing==2.0.1
 python-dateutil==1.5
 python-editor==1.0.3
 
-sh==1.11
-six==1.4.1
+
 SQLAlchemy==1.2.2
 virtualenv==15.1.0
 Werkzeug==0.14.1
