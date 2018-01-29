@@ -17,5 +17,4 @@ SQLAlchemy==1.2.2
 virtualenv==15.1.0
 Werkzeug==0.14.1
 whitenoise==3.3.1
-elasticsearch==1.7.6
 elasticsearch==5.0.1
