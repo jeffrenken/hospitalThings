@@ -1,4 +1,5 @@
 import os
+import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -12,9 +13,10 @@ BUILD_DIR = os.path.join(ROOT_PATH, 'build') ########bakery
 SECRET_KEY = '^e$@2k08pt0z6hgpvgao&+lh!mm9t4u+0#=v8&9we!$e4q_0$('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = ''
+DEBUG = False
 
-ALLOWED_HOSTS = []
+
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -76,11 +78,10 @@ WSGI_APPLICATION = 'searchDemo.wsgi.application'
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
+      'default': dj_database_url.config(
+          default='sqlite:////{0}'.format(os.path.join(BASE_DIR, 'db.sqlite3'))
+      )
+  }
 
 
 # Password validation
